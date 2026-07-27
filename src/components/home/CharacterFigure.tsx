@@ -17,7 +17,7 @@ export function CharacterFigure() {
       initial={reducedMotion ? false : { opacity: 0, y: 28 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: EASE_OUT }}
-      className="relative"
+      className="relative w-full max-w-105 sm:max-w-120 xl:max-w-135"
     >
       {/* Purple watercolor-like glow */}
       <div
@@ -43,7 +43,7 @@ export function CharacterFigure() {
         fetchPriority="high"
         animate={reducedMotion ? undefined : { y: [0, -8, 0] }}
         transition={{ duration: 6, ease: 'easeInOut', repeat: Infinity, delay: 1 }}
-        className="relative h-105 w-auto max-w-none object-contain mask-[linear-gradient(to_bottom,black_84%,transparent_99%)] sm:h-120 xl:h-135"
+        className="relative h-auto w-full object-contain mask-[linear-gradient(to_bottom,black_84%,transparent_99%)]"
       />
 
       {/* Soft grounding shadow */}

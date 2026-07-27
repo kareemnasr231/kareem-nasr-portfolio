@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import { fadeUp, staggerChildren } from '../../lib/motion'
 
 interface PageHeaderProps {
@@ -7,10 +7,12 @@ interface PageHeaderProps {
 }
 
 export function PageHeader({ title, subtitle }: PageHeaderProps) {
+  const reducedMotion = useReducedMotion()
+
   return (
     <motion.header
       variants={staggerChildren}
-      initial="hidden"
+      initial={reducedMotion ? false : 'hidden'}
       animate="visible"
       className="mx-auto max-w-2xl text-center"
     >

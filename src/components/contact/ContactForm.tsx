@@ -14,8 +14,9 @@ type Status =
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+// 16px on touch widths — smaller input fonts trigger iOS keyboard zoom.
 const inputClasses =
-  'w-full rounded-lg border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-muted/60 shadow-soft transition-colors focus:border-accent-purple/50'
+  'w-full rounded-lg border border-line bg-white px-4 py-3 text-base sm:text-sm text-ink placeholder:text-muted/60 shadow-soft transition-colors focus:border-accent-purple/50'
 
 export function ContactForm() {
   const [errors, setErrors] = useState<FieldErrors>({})

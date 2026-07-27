@@ -60,7 +60,7 @@ export function DarkShowcase() {
             character's head, not the page center */}
         <div className="mt-1 flex justify-center">
           <div className="flex h-80 items-center justify-center sm:h-96 lg:h-100">
-            <div className="scale-[0.58] sm:scale-75 lg:scale-[0.82] xl:scale-90">
+            <div className="scale-[0.58] sm:scale-75 lg:scale-[0.72] xl:scale-90">
               <TechOrbitSystem />
             </div>
           </div>

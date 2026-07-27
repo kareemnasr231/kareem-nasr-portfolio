@@ -10,8 +10,8 @@ export function TimelineCard({ item }: TimelineCardProps) {
   return (
     <GlowCard className="p-6 text-left sm:p-7">
       <p className="font-mono text-xs tracking-wide text-accent-purple uppercase">{item.role}</p>
-      {/* Date shown inside the card on mobile; next to the node on desktop */}
-      <p className="mt-1 font-mono text-xs text-muted md:hidden">{item.period}</p>
+      {/* Date shown inside the card on mobile/tablet; next to the node on lg+ */}
+      <p className="mt-1 font-mono text-xs text-muted lg:hidden">{item.period}</p>
       <h3 className="mt-2 font-display text-xl font-semibold text-ink">{item.title}</h3>
       {item.organization && (
         <p className="mt-0.5 text-sm font-medium text-muted">{item.organization}</p>

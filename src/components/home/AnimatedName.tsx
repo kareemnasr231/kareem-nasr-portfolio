@@ -41,7 +41,7 @@ export function AnimatedName({ themeIndex }: AnimatedNameProps) {
   return (
     <motion.h1
       animate={controls}
-      className="relative font-display text-5xl leading-[1.06] font-bold tracking-tight whitespace-nowrap sm:text-6xl"
+      className="relative font-display text-[clamp(2.1rem,9.5vw,3.75rem)] leading-[1.06] font-bold tracking-tight whitespace-nowrap"
     >
       <span className="sr-only">
         {siteConfig.firstName} {siteConfig.lastName}

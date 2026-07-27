@@ -13,7 +13,9 @@ export function TypewriterLine({ text }: TypewriterLineProps) {
   return (
     <div className="min-h-7">
       <span className="sr-only">{typedSentences.join(' ')}</span>
-      <p aria-hidden="true" className="font-mono text-base font-medium text-accent-purple sm:text-lg">
+      {/* clamp keeps the longest sentence on one line down to 320px,
+          so the reserved min-height stays truthful (no layout shift) */}
+      <p aria-hidden="true" className="font-mono text-[clamp(0.8rem,4vw,1.125rem)] font-medium text-accent-purple">
         <span className="mr-2 select-none">&gt;</span>
         {text}
         <span

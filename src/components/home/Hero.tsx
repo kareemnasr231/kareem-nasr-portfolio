@@ -48,7 +48,7 @@ export function Hero() {
 
         <div className="relative mx-auto flex max-w-2xl flex-col px-6 pt-24 pb-16 lg:min-h-dvh lg:justify-center lg:pt-20 lg:pb-12 lg:pl-16">
           {/* Character — the visual hero, floating above the identity */}
-          <div className="self-center">
+          <div className="flex w-full justify-center">
             <CharacterFigure />
           </div>
 

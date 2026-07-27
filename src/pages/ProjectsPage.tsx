@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import { PageHeader } from '../components/layout/PageHeader'
 import { ProjectCard } from '../components/projects/ProjectCard'
 import { projects, projectsPage } from '../data/projects'
@@ -7,6 +7,7 @@ import { staggerChildren } from '../lib/motion'
 
 export function ProjectsPage() {
   usePageTitle('Projects')
+  const reducedMotion = useReducedMotion()
 
   return (
     <section className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-24">
@@ -14,7 +15,7 @@ export function ProjectsPage() {
 
       <motion.div
         variants={staggerChildren}
-        initial="hidden"
+        initial={reducedMotion ? false : 'hidden'}
         animate="visible"
         className="mt-16 grid gap-8 md:grid-cols-2"
       >

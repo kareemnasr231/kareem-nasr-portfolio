@@ -33,6 +33,8 @@
   body {
     @apply bg-surface font-sans text-ink antialiased;
     text-rendering: optimizeLegibility;
+    /* Safety net: decorative layers must never cause horizontal scroll */
+    overflow-x: clip;
   }
 
   ::selection {
