@@ -1,6 +1,7 @@
 import type { Project } from '../types/content'
 import portfolioPreview from '../assets/projects/portfolio-preview.png'
 import aiTeacherPreview from '../assets/projects/ai-teacher-preview.png'
+import imdbSimulatePreview from '../assets/projects/imdb-simulate-preview.png'
 
 export const projectsPage = {
   title: 'Projects',
@@ -28,5 +29,15 @@ export const projects: readonly Project[] = [
     githubUrl: 'https://github.com/kareemnasr231/vokabl-ai-teacher',
     image: aiTeacherPreview,
     imageAlt: 'Preview of the AI English Teacher conversation interface',
+  },
+  {
+    id: 'imdb-simulate',
+    title: 'IMDB Simulate',
+    description:
+      'A movie discovery web application inspired by IMDb. Users can browse trending and popular movies, search by title, explore movie details, and enjoy a modern responsive interface powered by a movie API.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'REST API', 'Axios'],
+    githubUrl: 'https://github.com/kareemnasr231/IMDB-simulate',
+    image: imdbSimulatePreview,
+    imageAlt: 'Preview of the IMDB Simulate movie discovery interface',
   },
 ]
